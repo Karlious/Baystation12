@@ -18,7 +18,7 @@
 	Their biology is heavily attuned to surviving Moghes' dangerous waters, including gills, fins, and a venomous bite."
 
 	base_auras = list(
-		/obj/aura/regenerating/human/unathi/yeosa
+		/obj/aura/regenerating/human/unathi/yeosaa
 		)
 
 	additional_available_cultural_info = list(
