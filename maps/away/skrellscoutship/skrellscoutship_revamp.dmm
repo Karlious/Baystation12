@@ -168,12 +168,12 @@
 /obj/machinery/alarm/skrell{
 	pixel_y = 22
 	},
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /turf/simulated/floor/tiled/skrell,
 /area/ship/skrellscoutshuttle)
 "aO" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /turf/simulated/floor/tiled/skrell,
 /area/ship/skrellscoutshuttle)
 "aQ" = (
@@ -198,7 +198,7 @@
 /area/ship/skrellscoutshuttle)
 "aU" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /turf/simulated/floor/tiled/skrell,
 /area/ship/skrellscoutshuttle)
 "aV" = (
@@ -543,9 +543,8 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
 	},
-/obj/machinery/light/skrell{
-	dir = 1;
-	icon_state = "tube1"
+/obj/machinery/light{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/skrell/orange,
 /area/ship/skrellscoutship/maintenance/power)
@@ -584,10 +583,7 @@
 	d2 = 8;
 	icon_state = "0-8"
 	},
-/obj/machinery/power/ascent_reactor{
-	color = "null";
-	name = "skrellan advanced fusion drive"
-	},
+/obj/machinery/power/skrell_reactor,
 /turf/simulated/floor/tiled/skrell/orange,
 /area/ship/skrellscoutship/maintenance/power)
 "bZ" = (
@@ -609,7 +605,7 @@
 /obj/machinery/alarm/skrell{
 	pixel_y = 14
 	},
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /obj/item/weapon/storage/toolbox/electrical{
 	pixel_y = 8
 	},
@@ -813,7 +809,7 @@
 	dir = 1;
 	pixel_y = -22
 	},
-/obj/machinery/power/shield_generator,
+/obj/machinery/power/shield_generator/skrell,
 /obj/structure/cable{
 	d2 = 4;
 	icon_state = "0-4"
@@ -982,7 +978,7 @@
 /area/ship/skrellscoutship/maintenance/power)
 "dy" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /turf/simulated/floor/tiled/skrell,
 /area/ship/skrellscoutshuttle)
 "dA" = (
@@ -1101,7 +1097,7 @@
 /obj/machinery/light/skrell{
 	dir = 8
 	},
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /obj/item/weapon/extinguisher,
 /obj/item/weapon/extinguisher,
 /obj/machinery/light/skrell{
@@ -1358,7 +1354,7 @@
 /obj/structure/window/phoronreinforced{
 	dir = 1
 	},
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /obj/item/device/binoculars,
 /obj/item/device/binoculars,
 /obj/item/device/binoculars,
@@ -1382,7 +1378,7 @@
 /obj/structure/window/phoronreinforced{
 	dir = 1
 	},
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /obj/effect/floor_decal/industrial/outline/red,
 /obj/item/device/gps,
 /obj/item/device/gps,
@@ -1433,14 +1429,14 @@
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/command/armory)
 "eP" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /obj/item/weapon/tank/jetpack/carbondioxide,
 /obj/item/weapon/tank/jetpack/carbondioxide,
 /obj/item/weapon/tank/jetpack/carbondioxide,
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/command/armory)
 "eQ" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /obj/item/weapon/gun/energy/gun/skrell,
 /obj/item/weapon/gun/energy/gun/skrell,
 /obj/item/weapon/gun/energy/gun/skrell,
@@ -1454,7 +1450,7 @@
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/command/armory)
 "eS" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /obj/item/weapon/melee/energy/machete,
 /obj/item/weapon/melee/energy/machete,
 /obj/item/weapon/melee/energy/machete,
@@ -1465,7 +1461,7 @@
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/command/armory)
 "eT" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /obj/item/weapon/gun/energy/pulse_rifle/skrell,
 /obj/item/weapon/gun/energy/pulse_rifle/skrell,
 /obj/item/weapon/gun/energy/pulse_rifle/skrell,
@@ -1473,7 +1469,7 @@
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/command/armory)
 "eU" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /obj/item/weapon/gun/magnetic/railgun/flechette/skrell,
 /obj/item/weapon/gun/magnetic/railgun/flechette/skrell,
 /obj/item/weapon/gun/magnetic/railgun/flechette/skrell,
@@ -1576,7 +1572,7 @@
 /turf/simulated/floor/tiled/skrell,
 /area/ship/skrellscoutship/dock)
 "fs" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /obj/item/weapon/tank/jetpack/carbondioxide,
 /obj/item/weapon/tank/jetpack/carbondioxide,
 /obj/item/weapon/tank/jetpack/carbondioxide,
@@ -1588,7 +1584,7 @@
 /obj/machinery/alarm/skrell{
 	pixel_y = 14
 	},
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /obj/item/weapon/storage/box/lights/tubes/skrell{
 	pixel_y = -5;
 	pixel_x = 8
@@ -1615,7 +1611,7 @@
 /turf/simulated/floor/tiled/skrell,
 /area/ship/skrellscoutship/dock)
 "fw" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /obj/item/weapon/extinguisher,
 /obj/item/weapon/extinguisher,
 /obj/item/weapon/extinguisher,
@@ -1633,7 +1629,7 @@
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/robotics)
 "fx" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /obj/item/weapon/storage/toolbox/electrical{
 	pixel_y = 5
 	},
@@ -1655,7 +1651,7 @@
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/robotics)
 "fy" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /obj/item/clothing/mask/breath/emergency,
 /obj/item/clothing/mask/breath/emergency,
 /obj/item/clothing/mask/breath/emergency,
@@ -1710,7 +1706,7 @@
 /turf/simulated/floor/reinforced/airless,
 /area/ship/skrellscoutship/maintenance/atmos)
 "fH" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /obj/item/weapon/rcd,
 /obj/item/weapon/rcd_ammo,
 /obj/item/weapon/rcd_ammo,
@@ -2169,7 +2165,7 @@
 /turf/simulated/floor/tiled/skrell,
 /area/ship/skrellscoutship/wings/starboard)
 "gP" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /obj/machinery/light/skrell,
 /obj/item/weapon/storage/belt/holster/skrell,
 /obj/item/weapon/storage/belt/holster/skrell,
@@ -3005,7 +3001,7 @@
 /turf/simulated/floor/tiled/skrell/blue,
 /area/ship/skrellscoutship/crew/quarters)
 "jo" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /obj/item/weapon/tank/oxygen,
 /obj/item/weapon/tank/oxygen,
 /obj/item/weapon/tank/oxygen,
@@ -3095,7 +3091,7 @@
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/robotics)
 "jD" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /obj/structure/window/basic{
 	dir = 8
 	},
@@ -3108,7 +3104,7 @@
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/robotics)
 "jE" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /obj/item/stack/material/steel/fifty,
 /obj/item/stack/material/steel/fifty,
 /obj/item/stack/material/steel/fifty,
@@ -3117,7 +3113,7 @@
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/robotics)
 "jF" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /obj/structure/window/basic,
 /obj/structure/window/basic{
 	dir = 8
@@ -3128,7 +3124,7 @@
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/robotics)
 "jG" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/stack/material/glass/reinforced/fifty,
 /obj/item/stack/material/glass/reinforced/fifty,
@@ -3154,7 +3150,7 @@
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/robotics)
 "jP" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /obj/machinery/light/skrell{
 	dir = 8
 	},
@@ -3174,7 +3170,7 @@
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/robotics)
 "jU" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /obj/structure/window/basic,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/stack/material/glass/phoronrglass/ten,
@@ -3185,7 +3181,7 @@
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/robotics)
 "jV" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /obj/structure/window/basic,
 /obj/item/stack/material/titanium/fifty,
 /obj/item/stack/material/titanium/fifty,
@@ -3193,7 +3189,7 @@
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/robotics)
 "jW" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /obj/item/weapon/magnetic_ammo/skrell/slug,
 /obj/item/weapon/magnetic_ammo/skrell/slug,
 /obj/item/weapon/magnetic_ammo/skrell/slug,
@@ -3216,7 +3212,7 @@
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/robotics)
 "kd" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /obj/item/weapon/gun/magnetic/railgun/flechette/skrell,
 /obj/item/weapon/gun/magnetic/railgun/flechette/skrell,
 /obj/item/weapon/gun/magnetic/railgun/flechette/skrell,
@@ -3224,7 +3220,7 @@
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/robotics)
 "ke" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /obj/item/weapon/magnetic_ammo/skrell,
 /obj/item/weapon/magnetic_ammo/skrell,
 /obj/item/weapon/magnetic_ammo/skrell,
@@ -3239,7 +3235,7 @@
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/robotics)
 "kh" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /obj/structure/window/phoronreinforced{
 	dir = 4
 	},
@@ -3256,7 +3252,7 @@
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/robotics)
 "km" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /obj/item/clothing/glasses/thermal,
 /obj/item/clothing/glasses/thermal,
 /obj/item/clothing/glasses/thermal,
@@ -3577,11 +3573,11 @@
 /turf/simulated/floor/tiled/skrell/orange,
 /area/ship/skrellscoutship/wings/starboard)
 "mn" = (
-/obj/machinery/power/smes/buildable/max_cap_in_out,
 /obj/structure/cable/cyan{
 	d2 = 2;
 	icon_state = "0-2"
 	},
+/obj/machinery/power/smes/buildable/preset/skrell,
 /turf/simulated/floor/tiled/skrell,
 /area/ship/skrellscoutshuttle)
 "mt" = (
@@ -3679,7 +3675,7 @@
 /turf/simulated/floor/tiled/skrell,
 /area/ship/skrellscoutshuttle)
 "nG" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /obj/item/weapon/storage/box/lights/tubes/skrell,
 /obj/item/weapon/storage/box/lights/tubes/skrell,
 /turf/simulated/floor/tiled/skrell/green,
@@ -3765,7 +3761,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green,
-/obj/machinery/light/skrell,
+/obj/machinery/light,
 /turf/simulated/floor/tiled/skrell/orange,
 /area/ship/skrellscoutship/maintenance/power)
 "pj" = (
@@ -3807,6 +3803,7 @@
 /area/ship/skrellscoutship/crew/quarters)
 "pO" = (
 /obj/effect/wallframe_spawn/reinforced_phoron/hull,
+/obj/machinery/door/firedoor/autoset,
 /turf/simulated/floor/carpet/purple,
 /area/ship/skrellscoutship/crew/rec)
 "pY" = (
@@ -3857,7 +3854,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/ship/skrellscoutship/crew/quarters)
 "qC" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /obj/item/weapon/inflatable_dispenser,
 /obj/item/weapon/inflatable_dispenser,
 /obj/item/weapon/inflatable_dispenser,
@@ -3925,7 +3922,7 @@
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/robotics)
 "rz" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /obj/structure/window/basic,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/stack/material/plastic/fifty,
@@ -3935,9 +3932,16 @@
 /obj/item/stack/material/plastic/fifty,
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/robotics)
+"rF" = (
+/obj/effect/wallframe_spawn/reinforced_phoron/hull,
+/obj/effect/paint/black,
+/obj/machinery/door/firedoor/autoset,
+/turf/simulated/floor/plating,
+/area/ship/skrellscoutship/wings/starboard)
 "rR" = (
 /obj/effect/wallframe_spawn/reinforced_phoron/hull,
 /obj/effect/paint/black,
+/obj/machinery/door/firedoor/autoset,
 /turf/simulated/floor/plating,
 /area/ship/skrellscoutship/crew/quarters)
 "su" = (
@@ -4031,6 +4035,7 @@
 "ug" = (
 /obj/effect/paint/black,
 /obj/effect/wallframe_spawn/reinforced_phoron/hull,
+/obj/machinery/door/firedoor/autoset,
 /turf/simulated/floor/plating,
 /area/ship/skrellscoutship/crew/quarters)
 "uk" = (
@@ -4079,7 +4084,7 @@
 /area/ship/skrellscoutship/dock)
 "uZ" = (
 /obj/machinery/light/skrell,
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /turf/simulated/floor/tiled/skrell/orange,
 /area/ship/skrellscoutship/wings/starboard)
 "va" = (
@@ -4092,7 +4097,7 @@
 /turf/simulated/floor/plating,
 /area/ship/skrellscoutship/maintenance/power)
 "vh" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /obj/item/weapon/magnetic_ammo/skrell,
 /obj/item/weapon/magnetic_ammo/skrell,
 /obj/item/weapon/magnetic_ammo/skrell,
@@ -4294,7 +4299,7 @@
 /turf/simulated/wall/r_wall,
 /area/ship/skrellscoutship/command/bridge)
 "yF" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /obj/structure/window/phoronreinforced{
 	dir = 4
 	},
@@ -4306,8 +4311,14 @@
 /obj/effect/floor_decal/industrial/outline/red,
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/robotics)
+"yL" = (
+/obj/effect/wallframe_spawn/reinforced_phoron/hull,
+/obj/effect/paint/black,
+/obj/machinery/door/firedoor/autoset,
+/turf/simulated/floor/plating,
+/area/ship/skrellscoutship/wings/port)
 "yN" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /obj/item/weapon/gun/energy/pulse_rifle/skrell,
 /obj/item/weapon/gun/energy/pulse_rifle/skrell,
 /obj/item/weapon/gun/energy/pulse_rifle/skrell,
@@ -4320,6 +4331,7 @@
 "yV" = (
 /obj/effect/wallframe_spawn/reinforced_phoron/hull,
 /obj/effect/paint/black,
+/obj/machinery/door/firedoor/autoset,
 /turf/simulated/floor/plating,
 /area/ship/skrellscoutship/crew/kitchen)
 "zl" = (
@@ -4494,6 +4506,7 @@
 "Cm" = (
 /obj/effect/wallframe_spawn/reinforced_phoron/hull,
 /obj/effect/paint/black,
+/obj/machinery/door/firedoor/autoset,
 /turf/simulated/floor/plating,
 /area/ship/skrellscoutship/command/bridge)
 "Cv" = (
@@ -4551,6 +4564,7 @@
 "Dj" = (
 /obj/effect/wallframe_spawn/reinforced_phoron/hull,
 /obj/effect/paint/black,
+/obj/machinery/door/firedoor/autoset,
 /turf/simulated/floor/plating,
 /area/ship/skrellscoutship/crew/rec)
 "Ds" = (
@@ -4628,6 +4642,7 @@
 "ET" = (
 /obj/effect/wallframe_spawn/reinforced_phoron/hull,
 /obj/effect/paint/black,
+/obj/machinery/door/firedoor/autoset,
 /turf/simulated/floor/plating,
 /area/ship/skrellscoutship/crew/medbay)
 "EY" = (
@@ -4791,7 +4806,7 @@
 /turf/simulated/floor/tiled/skrell,
 /area/ship/skrellscoutship/dock)
 "IQ" = (
-/obj/machinery/light/skrell,
+/obj/machinery/light,
 /turf/simulated/floor/tiled/skrell/orange,
 /area/ship/skrellscoutship/maintenance/power)
 "IS" = (
@@ -4823,9 +4838,8 @@
 	d2 = 2;
 	icon_state = "0-2"
 	},
-/obj/machinery/light/skrell{
-	dir = 1;
-	icon_state = "tube1"
+/obj/machinery/light{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/skrell/orange,
 /area/ship/skrellscoutship/maintenance/power)
@@ -5077,9 +5091,8 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/light/skrell{
-	dir = 1;
-	icon_state = "tube1"
+/obj/machinery/light{
+	dir = 1
 	},
 /turf/simulated/floor/plating,
 /area/ship/skrellscoutship/maintenance/power)
@@ -5141,7 +5154,7 @@
 /turf/simulated/floor/tiled/skrell,
 /area/ship/skrellscoutship/dock)
 "Oh" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /obj/item/stack/material/glass/fifty,
 /obj/item/stack/material/glass/fifty,
 /obj/item/stack/material/glass/fifty,
@@ -5407,7 +5420,7 @@
 /turf/simulated/floor/tiled/skrell,
 /area/ship/skrellscoutshuttle)
 "Rs" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /obj/item/weapon/storage/belt/utility/full,
 /obj/structure/window/reinforced{
 	dir = 8
@@ -5532,12 +5545,12 @@
 /area/ship/skrellscoutship/crew/quarters)
 "TE" = (
 /obj/effect/catwalk_plated/dark,
-/obj/machinery/light/skrell,
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 8;
 	icon_state = "1-8"
 	},
+/obj/machinery/light,
 /turf/simulated/floor/plating,
 /area/ship/skrellscoutship/maintenance/power)
 "TL" = (
@@ -5835,7 +5848,7 @@
 /turf/simulated/floor/carpet/purple,
 /area/ship/skrellscoutship/crew/rec)
 "YA" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/skrell,
 /obj/item/weapon/storage/belt/utility/full,
 /obj/item/weapon/storage/belt/utility/full,
 /obj/item/weapon/storage/belt/utility/full,
@@ -10924,7 +10937,7 @@ Gw
 Gw
 Gw
 Gw
-Ex
+rF
 YG
 dE
 dE
@@ -10936,7 +10949,7 @@ im
 im
 im
 UD
-Dy
+yL
 Gw
 Gw
 Gw
@@ -11026,7 +11039,7 @@ Gw
 Gw
 Gw
 Gw
-Ex
+rF
 vP
 dl
 dl
@@ -11038,7 +11051,7 @@ il
 il
 il
 iv
-Dy
+yL
 Gw
 Gw
 Gw
@@ -11533,8 +11546,8 @@ Gw
 Gw
 Gw
 Gw
-Ex
-Ex
+rF
+rF
 GN
 dl
 gy
@@ -11550,8 +11563,8 @@ UW
 iv
 il
 il
-Dy
-Dy
+yL
+yL
 Gw
 Gw
 Gw
@@ -11634,8 +11647,8 @@ Gw
 Gw
 Gw
 Gw
-Ex
-Ex
+rF
+rF
 dl
 dl
 dl
@@ -11653,8 +11666,8 @@ iw
 il
 il
 il
-Dy
-Dy
+yL
+yL
 Gw
 Gw
 Gw
@@ -11736,7 +11749,7 @@ Gw
 Gw
 Gw
 Gw
-Ex
+rF
 gB
 gK
 dE
@@ -11756,7 +11769,7 @@ im
 im
 iu
 iR
-Dy
+yL
 Gw
 Gw
 Gw

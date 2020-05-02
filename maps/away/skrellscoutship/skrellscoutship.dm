@@ -203,6 +203,8 @@
 	TLV["temperature"] =	list(T0C-26, T0C, T0C+80, T0C+90) // K
 
 /obj/machinery/power/smes/buildable/preset/skrell
+	icon = 'icons/obj/machines/power/skrell_smes.dmi'	
+	overlay_icon = 'icons/obj/machines/power/skrell_smes.dmi'
 	uncreated_component_parts = list(
 		/obj/item/weapon/stock_parts/smes_coil/super_io = 2,
 		/obj/item/weapon/stock_parts/smes_coil/super_capacity = 2)
@@ -263,6 +265,10 @@
 	light_type = /obj/item/weapon/light/tube/skrell
 	desc = "Some kind of strange alien lighting technology"
 
+/obj/machinery/light/skrell/fusion
+	name = "skrellian light"
+	light_type = /obj/item/weapon/light/tube/large/skrell/fusion
+	desc = "Some kind of strange alien lighting technology"
 
 /obj/item/weapon/light/tube/skrell
 	name = "skrellian light filament"
@@ -276,6 +282,17 @@
 	b_colour = COLOR_LIGHT_CYAN
 	desc = "Some kind of strange alien lightbulb technology."
 
+/obj/item/weapon/light/tube/large/skrell/fusion
+	name = "skrellian light filament"
+	color = COLOR_ORANGE
+	b_colour = COLOR_ORANGE
+	desc = "Some kind of strange alien lightbulb technology."
+
+/obj/item/weapon/light/tube/large/skrell/smes
+	name = "skrellian light filament"
+	color = COLOR_CYAN
+	b_colour = COLOR_CYAN
+	desc = "Some kind of strange alien lightbulb technology."
 
 /obj/item/weapon/storage/box/lights/tubes/skrell
 	name = "box of replacement tubes"
@@ -316,3 +333,77 @@
 	color = "#40e0d0"
 	name = "thermal induction generator"
 	desc = "Made by Krri'gli Corp using thermal induction technology, this heater is guaranteed not to set anything, or anyone, on fire."
+
+//skrell reactor
+
+// This is an absolutely stupid machine. Basically the same as the debug one with some alterations.
+// It is a placeholder for a proper reactor setup (probably a RUST descendant)
+/obj/machinery/power/skrell_reactor
+	name = "mantid fusion stack"
+	desc = "A tall, gleaming assemblage of advanced alien machinery. It hums and crackles with restrained power."
+	icon = 'icons/obj/machines/power/skrell_reactor.dmi'
+	icon_state = "core"
+	var/on = TRUE
+	var/output_power = 9000 KILOWATTS
+	var/image/field_image
+
+/obj/machinery/power/ascent_reactor/attack_hand(mob/user)
+	. = ..()
+
+	if(ishuman(user))
+		var/mob/living/carbon/human/H = user
+		if(H.species.name != SPECIES_MANTID_GYNE && H.species.name != SPECIES_MONARCH_QUEEN)
+			to_chat(H, SPAN_WARNING("You have no idea how to use \the [src]."))
+			return
+	else if(!istype(user, /mob/living/silicon/robot/flying/ascent))
+		to_chat(user, SPAN_WARNING("You have no idea how to interface with \the [src]."))
+		return
+
+	user.visible_message(SPAN_NOTICE("\The [user] switches \the [src] [on ? "off" : "on"]."))
+	on = !on
+	update_icon()
+
+/obj/machinery/power/ascent_reactor/on_update_icon()
+	. = ..()
+
+	if(!field_image)
+		field_image = image(icon = 'icons/obj/machines/power/fusion.dmi', icon_state = "emfield_s1")
+		field_image.color = COLOR_CYAN
+		field_image.alpha = 50
+		field_image.layer = SINGULARITY_LAYER
+		field_image.appearance_flags |= RESET_COLOR
+
+		var/matrix/M = matrix()
+		M.Scale(3)
+		field_image.transform = M
+
+	if(on)
+		overlays |= field_image
+		set_light(0.8, 1, 6, l_color = COLOR_CYAN)
+		icon_state = "core"
+	else
+		overlays -= field_image
+		set_light(0)
+		icon_state = "core0"
+
+/obj/machinery/power/ascent_reactor/Initialize()
+	. = ..()
+	update_icon()
+
+/obj/machinery/power/ascent_reactor/Process()
+	if(on)
+		add_avail(output_power)
+
+//Skrell Shield Gen
+
+/obj/machinery/power/shield_generator/skrell
+	name = "skrellian shield generator"
+	desc = "A heavy-duty shield generator and capacitor, capable of generating energy shields at large distances."
+	icon = 'icons/obj/machines/skrell_shielding.dmi'
+
+//skrell Rack
+/obj/structure/table/rack/skrell
+	name = "skrellian storage space"
+	desc = "Somehow even this rack exudes sleakness."
+	icon = 'icons/obj/skrell.dmi'
+	icon_state = "rack"
